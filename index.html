@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cintya's Porto</title>
+    <!-- Font Awesome untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Link ke file CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav>
+        <div class="logo">Cintya's<span>Portofolio</span></div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#cv">CV</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- ===== HOME ===== -->
+    <section id="home">
+        <div class="home-content">
+            <div class="avatar">
+                <!-- Pastikan gambar ada di folder assets -->
+                <img src="assets/pp.jpeg" alt="Foto Cintya">
+            </div>
+            <h1>Halo, ini <span>Cintya</span></h1>
+            <p class="tagline">Creative Thinker With an Informatics Engineering's Background</p>
+
+            <div class="bio-grid">
+                <div class="bio-item">
+                    <i class="fas fa-user"></i>
+                    <h3>Nama</h3>
+                    <p>Cintya Rahmadina</p>
+                </div>
+                <div class="bio-item">
+                    <i class="fas fa-birthday-cake"></i>
+                    <h3>Umur</h3>
+                    <p>22 Tahun</p>
+                </div>
+                <div class="bio-item">
+                    <i class="fas fa-brain"></i>
+                    <h3>MBTI</h3>
+                    <p>INTJ</p>
+                </div>
+                <div class="bio-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Domisili</h3>
+                    <p>Depok, Indonesia</p>
+                </div>
+                <div class="bio-item">
+                    <i class="fas fa-heart"></i>
+                    <h3>Hobi</h3>
+                    <p>Membaca dan Menulis</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT ME ===== -->
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-container">
+            <div class="about-card">
+                <h3><i class="fas fa-graduation-cap"></i> Pendidikan</h3>
+                <div class="education-item">
+                    <h4>S1 Teknik Informatika</h4>
+                    <p>Universitas Indraprasta PGRI | 2022 - 2026</p>
+                    <p>IPK: 3.47/4.0</p>
+                </div>
+                <div class="education-item">
+                    <h4>SMA</h4>
+                    <p>SMAS Darul Kholidin | 2019 - 2022</p>
+                </div>
+            </div>
+
+            <div class="about-card">
+                <h3><i class="fas fa-code"></i> Skill</h3>
+                <div class="skills-list">
+                    <span class="skill-tag">Storytelling</span>
+                    <span class="skill-tag">Creative Thinking</span>
+                    <span class="skill-tag">Writing & Editing</span>
+                    <span class="skill-tag">Audience Awareness</span>
+                    <span class="skill-tag">Research</span>
+                    <span class="skill-tag">Adaptability</span>
+                    <span class="skill-tag">Audience Analysis</span>
+                    <span class="skill-tag">Dialogue</span>
+                    <span class="skill-tag">Canva</span>
+                </div>
+            </div>
+
+            <div class="about-card" style="grid-column: 1 / -1;">
+                <h3><i class="fas fa-briefcase"></i> Pengalaman Singkat</h3>
+                <div class="experience-brief">
+                    <p>Lulusan teknik informatika yang memiliki ketertarikan dibidang kreatif, baik dalam penulisan maupun penembangan ide dalam suatu project. Terbiasa melakukan riset , menyusun informasi yang diolah menjadi tulisan yang terstruktur dan mudah dipahami.</p>
+                    <p>Aktif dalam kepanitiaan sebagai penanggung jawab acara dan humas serta menjadi bendahara umum pada organisasi salah satu ukm. selain itu pernah menjuarai lomba menulis semasa sekolah. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+            <!-- Project KKP -->
+            <div class="project-card" onclick="window.open('https://github.com/cintyarhmdn/aplikasi-data-siswa', '_blank')">
+                <div class="project-header">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Intern Project</h3>
+                </div>
+                <div class="project-body">
+                    <p>Sistem Manajemen nilai dan absensi murid yang dibuat dengan netbeans dan MySQL. Yang sudah dilengkapi dengan sistem CRUD.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">NetBeans</span>
+                        <span class="project-tag">MySQL</span>
+                    </div>
+                    <a href="#" class="project-link" onclick="event.stopPropagation(); window.open('https://github.com/cintyarhmdn/aplikasi-data-siswa', '_blank')">
+                        Lihat Project <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card" onclick="window.open('https://github.com/cintyarhmdn/nutriboo', '_blank')">
+                <div class="project-header">
+                    <i class="fa-solid fa-user-doctor"></i>
+                    <h3>nutriboo</h3>
+                </div>
+                <div class="project-body">
+                    <p>sistem diagnosa gizi balita dengan tabel antropometri klasifikasi bb/u. Sistem dilengkapi dengan fitur CRUD, perhitungan nilai z-score, diagnosa gizi dengan bb/u, rekomendasi gizi, dan cetak laporannya.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">HTML</span>
+                        <span class="project-tag">PHP</span>
+                        <span class="project-tag">CSS</span>
+                        <span class="project-tag">MySQL</span>
+                    </div>
+                    <a href="#" class="project-link" onclick="event.stopPropagation(); window.open('https://github.com/cintyarhmdn/nutriboo', '_blank')">
+                        Lihat Project <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EXPERIENCE ===== -->
+    <section id="experience">
+        <h2 class="section-title">Experience</h2>
+        <div class="timeline">
+            <!-- Magang -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>SDI Bauturrahman</h3>
+                    <div class="role">Data Entry Intern</div>
+                    <div class="date">Oktober 2025 - Desember 2025</div>
+                    <p>Mengelola proses peginputan data Murid SDI Baiturrahman berupa nilai dan absensi</p>
+                </div>
+            </div>
+
+            <!-- Kepanitiaan -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>UKM Tae Kwon Do</h3>
+                    <div class="role">Bendahara Umum</div>
+                    <div class="date">Februari 2024 - Maret 2025</div>
+                    <p>Bertanggung jawab mengelola semua jenis kegiatan keuangang organisasi dan membuat laporannya.</p>
+                </div>
+            </div>
+
+            <!-- Organisasi -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Pekan Olahraga dan Seni</h3>
+                    <div class="role">Anggota Humas Publikasi dan Dokumentasi</div>
+                    <div class="date">Mei 2024 - Juli 2024</div>
+                    <p>Membuat konsep desain acara dan bertanggung jawab terhadap publikasi serta menjaga public relations.</p>
+                </div>
+            </div>
+
+            <!-- Organisasi 2 -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Hut Tae Kwon Do</h3>
+                    <div class="role">Penanggung Jawab</div>
+                    <div class="date">2023</div>
+                    <p>Beratanggung Jawab dalam memantau keseluruhan acara berjalan dengan baik </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CV ===== -->
+    <section id="cv">
+        <h2 class="section-title">Curriculum Vitae</h2>
+        <div class="cv-container">
+            <i class="fas fa-file-pdf"></i>
+            <h3>Download CV Saya</h3>
+            <p>Silakan unduh CV saya dalam format PDF untuk informasi lebih lengkap mengenai pendidikan, pengalaman, dan keterampilan saya.</p>
+            <!-- Pastikan file PDF ada di folder assets -->
+            <a href="assets/Cintya Rahmadina-resume (1).pdf" class="btn-download" download>
+                <i class="fas fa-download"></i> Download CV
+            </a>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-grid">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=cintyarhmdna@gmail.com" target="_blank" class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <h3>Email</h3>
+            </a>
+            <a href="https://github.com/cintyarhmdn" target="_blank" class="contact-item">
+                <i class="fab fa-github"></i>
+                <h3>GitHub</h3>
+            </a>
+            <a href="https://linkedin.com/in/cintya-rahmadina" target="_blank" class="contact-item">
+                <i class="fab fa-linkedin"></i>
+                <h3>LinkedIn</h3>
+            </a>
+            <a href="https://instagram.com/cintyarhmdna" target="_blank" class="contact-item">
+                <i class="fab fa-instagram"></i>
+                <h3>Instagram</h3>
+            </a>
+            <a href="https://wa.me/6288214674437" target="_blank" class="contact-item">
+                <i class="fab fa-whatsapp"></i>
+                <h3>WhatsApp</h3>
+            </a>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <p>&copy; Cintya Rahmadina. All rights reserved.</p>
+    </footer>
+
+    <!-- Link ke file JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
