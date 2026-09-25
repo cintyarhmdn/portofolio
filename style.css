@@ -1,4 +1,4 @@
-/* ===== RESET & VARIABEL ===== */
+
 * {
     margin: 0;
     padding: 0;
@@ -128,7 +128,7 @@ section {
     gap: 2rem;
 }
 
-/* Avatar dengan Foto */
+
 .avatar {
     width: 180px;
     height: 180px;
@@ -168,10 +168,10 @@ section {
 
 .bio-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* Memaksa 5 kolom sejajar */
-    gap: 1rem; /* Jarak sedikit dirapatkan agar muat */
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 1rem; 
     width: 100%;
-    max-width: 1000px; /* Melebarkan wadah agar 5 kotak muat */
+    max-width: 1000px;
     margin-top: 2rem;
 }
 
@@ -475,6 +475,81 @@ section {
 
 .timeline-item:nth-child(even)::after {
     left: -8px;
+}
+
+/* ===== ACHIEVEMENT ===== */
+#achievement {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.achievement-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    width: 100%;
+}
+
+.achievement-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.achievement-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.certificate-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    border-bottom: 3px solid var(--secondary);
+}
+
+.achievement-info {
+    padding: 1.5rem;
+}
+
+.achievement-info h3 {
+    color: var(--primary);
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+}
+
+.achievement-date {
+    color: var(--secondary);
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+}
+
+.achievement-info p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+
+@media (max-width: 992px) {
+    .achievement-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Responsive: HP jadi 1 kolom */
+@media (max-width: 600px) {
+    .achievement-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .certificate-img {
+        height: 180px;
+    }
 }
 
 /* ===== CV ===== */
